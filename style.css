@@ -14,23 +14,30 @@
     --very-dark-cyan: hsl(192, 100%, 9%);
     --very-pale-blue: hsl(207, 100%, 98%);
 }
+html{
+    min-width: 320px;
+}
 body{
     max-width: 1280px;
     min-width: 375px;
     font-family: 'Open Sans','Sans-serif';
     padding: 3rem 4rem;
     margin: 0 auto;
+    font-size: 2em;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Poppins','Sans-serif';
     font-weight: 700;
     color: var(--very-dark-cyan);
 }
-h2{
-    font-size: 2.5rem;
+h1 {
+    font-size: 3vw;
 }
-p{
-    font-size: 18px;
+h2 {
+    font-size: 3.0vh;
+}
+p {
+    font-size: 1.3vw;
 }
 button{
     background: none;
@@ -58,8 +65,8 @@ nav button{
     
 }
 .content-banner{
-    height: 32rem;
-    padding: 0 5rem;
+    padding: 3rem 3rem;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,21 +74,21 @@ nav button{
     text-align: center;
 }
 .content-banner p{
-    padding: 2rem 13rem;
+    margin: 1rem 15rem;
 }
 .content-banner button{
     background: var(--pink);
     color: white;
     font-weight: 700;
-    font-size: 15px;
-    margin-top: 2rem;
-    padding: 1rem 3rem;
+    font-size: 1vw;
+    padding: 1.3rem 5rem;
     box-shadow: 0px 4px 25px 3px rgba(201, 201, 201, 0.979);
     cursor: pointer;
     border-radius: 50px;
+    margin-top: 40px;
 }
 .img-banner{
-    width: 95%;
+    width: 85%;
     height: auto;
 }
 .banner-img{
@@ -90,43 +97,87 @@ nav button{
     align-items: center;
     padding-bottom: 10% ;
 }
-@media only screen and (min-width: 959px) and (max-width: 1290px) {
-    .content-banner p{
-        padding: 3rem 5rem;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-    p{
-        font-size: 12px;
-    }
-    .content-banner p{
-        padding: 3rem 0;
-    }
-}
-@media only screen and (max-width: 768px) {
-    p{
-        font-size: 20px;
-    }
-    .content-banner p{
-        padding: 2rem 0;
-    }
-}
 
-@media only screen and (max-width: 479px) {
-    nav img{
-        height: 1.4rem;
-    }
+/* Mobile S */
+@media screen and (min-width:320px) and (max-width: 374px){
     body{
-       padding: 2.5rem 2rem;
+        padding: 1rem 2rem;
+    }
+    h1{
+        font-size: 7.5vw;
+    }
+    p{
+        font-size: 4.5vw;
+    }
+
+    .content-banner{
+        padding: 0rem 1rem;
+        margin-top: 60px;
+        height: 25rem;
+    }
+    .content-banner p{
+        margin: 1rem auto;
+    }
+    .content-banner button{
+        margin: 2rem 0;
+        padding: 1rem 3rem;
+        font-size: 4.5vw;
+    }
+}
+/* Mobile M */
+@media screen and (max-width: 375px) {
+    body{
+        padding: 1.5rem 2rem;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    p{
+        font-size: 3.5vw;
     }
     .content-banner{
-        padding: 0 0;
+        padding: 0rem 0rem;
+        height: 25rem;
+        margin-top: 25px;
     }
-    .content-banner h2, p{
-        font-size: 1.7rem;
-        padding: 0 0;
+    .content-banner p{
+        margin: 1rem auto;
+    }
+    .content-banner button{
+        padding: 1rem 3rem;
+        font-size: 3.5vw;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 375px) and (max-width:769px) {
+    h1{
+        font-size: 5.5vw;
     }
     p{
-        font-size: 15px;
+        font-size: 2.5vw;
+    }
+    .content-banner{
+        margin: 2rem 4rem;
+        height: 30rem;
+    }
+    .content-banner button{
+        padding: 1rem 4rem;
+        font-size: 2vw;
+    }
+}
+/* Laptop */
+@media screen and (min-width: 768px) and (max-width: 1025px){
+    h1{
+        font-size: 3.8vw;
+    }
+    p{
+        font-size: 2vw;
+    }
+    .content-banner p{
+        margin: 1rem 6rem;
+    }
+    .content-banner button{
+        padding: 1rem 5rem;
+        font-size: 2vw;
     }
 }
