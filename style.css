@@ -97,7 +97,20 @@ nav button{
     align-items: center;
     padding-bottom: 10% ;
 }
-
+.numbers-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    height: 30rem;
+}
+.numbers-content h1{
+    font-size: 7vw;
+}
+.numbers-content p{
+    text-align: center;
+    color: #A7B9C8;
+}
 /* Mobile S */
 @media screen and (min-width:320px) and (max-width: 374px){
     body{
@@ -107,25 +120,40 @@ nav button{
         font-size: 7.5vw;
     }
     p{
-        font-size: 4.5vw;
+        font-size: 5vw;
     }
 
     .content-banner{
         padding: 0rem 1rem;
-        margin-top: 60px;
+        margin-top: 80px;
         height: 25rem;
     }
     .content-banner p{
         margin: 1rem auto;
+        
     }
     .content-banner button{
         margin: 2rem 0;
         padding: 1rem 3rem;
         font-size: 4.5vw;
     }
+    .banner-img{
+        margin-top: 30px;
+    }
+    .numbers-content{
+        height: 15rem;
+        margin-top: 30px;
+    }
+    .numbers-content h1{
+        font-size: 9vw;
+    }
+    .numbers-content p{
+        text-align: start;
+
+    }
 }
 /* Mobile M */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width:432px){
     body{
         padding: 1.5rem 2rem;
     }
@@ -147,26 +175,62 @@ nav button{
         padding: 1rem 3rem;
         font-size: 3.5vw;
     }
+    .numbers-content{
+        height: 25rem;
+    }
+    
 }
-/* Tablet */
-@media screen and (min-width: 375px) and (max-width:769px) {
+/* Mobile L */
+@media screen and (min-width: 425px) and (max-width: 768px) {
     h1{
-        font-size: 5.5vw;
+        font-size: 6vw;
     }
     p{
-        font-size: 2.5vw;
+        font-size: 3vw;
+    }
+    .numbers-content h1{
+        font-size: 7vw;
     }
     .content-banner{
-        margin: 2rem 4rem;
+        margin: 1rem 1rem;
+        padding: 1rem 1rem;
         height: 30rem;
     }
+    .content-banner p{
+        margin: 1rem auto;
+        padding: 0;
+        font-size: 4vw;
+    }
     .content-banner button{
-        padding: 1rem 4rem;
+        padding: 1rem 3rem;
+        font-size: 3vw;
+    }
+    
+
+}
+@media screen and (min-width: 768px) and (max-width:1024px){
+    h1{
+        font-size: 5vw;
+    }
+    p{
         font-size: 2vw;
+    }
+    .content-banner{
+        margin: 1rem 1rem;
+        height: 35rem;
+    }
+    .content-banner p{
+        font-size: 2.5vw;
+        margin: 0;
+        padding: 0;
+    }
+    .content-banner button{
+        padding: 1rem 3rem;
+        font-size: 2.5vw;
     }
 }
 /* Laptop */
-@media screen and (min-width: 768px) and (max-width: 1025px){
+@media screen and (min-width: 1025px) and (max-width: 1200px){
     h1{
         font-size: 3.8vw;
     }
