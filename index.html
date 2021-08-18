@@ -8,107 +8,114 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-      <nav>
-        <div>
-          <a href="">
-            <img src="./images/logo.svg" alt="">
-          </a>
-        </div>
-        <div>
-          <button>Try it Free</button>
-        </div>
-      </nav>
-    </header>
-    
     <main>
+      <header>
+        <nav>
+          <div>
+            <a href="">
+              <img src="./images/logo.svg" alt="">
+            </a>
+          </div>
+          <div>
+            <button>Try it Free</button>
+          </div>
+        </nav>
+      </header>
       <section>
         <div class="content-banner">
           <h1>Build The Community Your Fans Will Love</h1>
           <p>Huddle re-immagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion</p>
-          <button>Get Started For Free</button>
+          <button class="btn">Get Started For Free</button>
         </div>
         <div class="banner-img">
           <img src="./images/screen-mockups.svg" alt="Telas da página" class="img-banner">
         </div>
       </section>
+
       <section class="numbers-content">
-        <div>
+        <div class="card-numbers">
           <img src="./images/icon-communities.svg" alt="">
           <h1>1.4k+</h1>
           <p>Communities Formed</p>
         </div>
-        <div>
+        <div class="card-numbers">
           <img src="./images/icon-messages.svg" alt="">
           <h1>2.7m+</h1>
           <p>Messages Sent</p>
         </div>
       </section>
 
-      <section>
-        <div>
+      <section class="cards">
+        <div class="card-content">
           <h4>Grow Together</h4>
           <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form</p>
         </div>
-        <div>
+        <div class="card-photo">
           <img src="./images/illustration-grow-together.svg" alt="" class="img-banner">
         </div>
       </section>
 
-      <section>
-        <div>
+      <section class="cards">
+        <div class="card-photo">
           <img src="./images/illustration-flowing-conversation.svg" alt="" class="img-banner">
         </div>
-        <div>
+        <div class="card-content">
           <h4>Flowing conversations</h4>
           <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow</p>
         </div>
       </section>
 
-      <section>
-        <div>
+      <section class="cards">
+        <div class="card-content">
           <h4>Your Users</h4>
           <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately</p>
         </div>
-        <div>
+        <div class="card-photo">
           <img src="./images/illustration-your-users.svg" alt="" class="img-banner">
         </div>
       </section>
        
-      <section>
+      <section id="last-section">
         <h3>Ready To Build Your Community?</h3>
-        <button>
+        <button class="btn">
           Get Started For Free
         </button>
       </section>
     </main>
     
+    <div id="wave-footer"></div>
     <footer>
       <section>
-        <a href="#">
-          <img src="./images/logo.svg" alt="Logo Huddle">
-        </a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam justo justo, congue ut erat placerat, fringilla cursus sem. Sed eget ullamcorper lectus, vel rutrum quam. </p>
-        <div>
-          <img src="./images/icon-phone.svg" alt="Telefone">
-          <p>Phone: +1-543-123-4567</p>
+        <div class="footer-container">
+          <a href="#">
+            <img src="images/icon-messages.svg" alt="Logo Huddle">
+            <h2>Huddle</h2>
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam justo justo, congue ut erat placerat, fringilla cursus sem. </p>
+          <div>
+            <img src="./images/icon-phone.svg" alt="Telefone" class="icons-footer">
+            <p class="p">Phone: +1-543-123-4567</p>
+          </div>
+          <div>
+            <img src="./images/icon-email.svg" alt="Email" class="icons-footer">
+            <p class="">example@huddle.com</p>
+          </div>
         </div>
-        <div>
-          <img src="./images/icon-email.svg" alt="Email">
-          <p>example@huddle.com</p>
-        </div>
-        <div>
-          <img src="./images/icons8-facebook.svg" alt="Facebook">
-          <img src="./images/icons8-instagram-logo.svg" alt="Instagram">
-          <img src="./images/icons8-twitter.svg" alt="Twitter">
+        <div id="footer-newsletter" class="footer-container">
+          <h4>NEWSLETTER</h4>
+          <p>To receive tips on how to grow your community, sign up to our weekly newsletter. We'll never send you span or pass on your email address</p>
+          <div id="contact-newsletter">
+            <input type="text" name="email" id="email">
+            <button>Subscribe</button>
+          </div>
         </div>
       </section>
-      <section>
-        <h4>NEWSLETTER</h4>
-        <p>To receive tips on how to grow your community, sign up to our weekly newsletter. We'll never send you span or pass on your email address</p>
-        <input type="text" name="email" id="email">
-        <button>Subscribe</button>
-      </section>
+      <div id="social-footer">
+        <img src="images/icons8-facebook (1).svg" alt="Facebook" class="social-icons" id="Facebook">
+        <img src="./images/icons8-instagram-logo (1).svg" alt="Instagram" class="social-icons" id="instagram">
+        <img src="images/icons8-twitter (1).svg" alt="Twitter" class="social-icons" id="twitter">
+      </div>
     </footer>
+    
 </body>
 </html>
